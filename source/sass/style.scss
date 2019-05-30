@@ -1,0 +1,32 @@
+@import "page-header";
+@import "intro";
+@import "font";
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+/*@font-face {
+  font-family: 'Besom 2';
+  src: url('Besom.eot');
+  src: local('Besom by Krisjanis Mezulis / RIT CREATIVE'), local('Besom'),
+    url('Besom.eot?#iefix') format('embedded-opentype'),
+    url('Besom.woff') format('woff'),
+    url('Besom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: "Besom 2";
+  src: url("../font/Besom.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}

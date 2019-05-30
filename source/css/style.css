@@ -1,0 +1,150 @@
+.page-header {
+  width: 100%;
+  background: url("../img/bg-header-modile.jpg") no-repeat center;
+  background-position: 0 1px; }
+
+.page-header__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  display: inline-block; }
+
+.page-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.intro__sup-title {
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+  position: relative; }
+  .intro__sup-title::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    width: 270px;
+    height: 15px;
+    background: url("../img/bg-intro-span.png") no-repeat; }
+
+.intro__title {
+  font-family: "Besom 2", sans-serif;
+  color: #ff0000;
+  margin: 0;
+  font-weight: 100;
+  font-size: 102px;
+  line-height: 11,45px; }
+  .intro__title span {
+    display: block;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: 700; }
+
+.intro__list {
+  width: 198px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative; }
+  .intro__list:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -3px;
+    background: url("../img/bg-intro-list.png") no-repeat;
+    width: 205px;
+    height: 40px;
+    z-index: 1; }
+
+.intro__item {
+  z-index: 10;
+  margin-left: 8px;
+  width: 24px;
+  text-align: left; }
+
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.intro__text {
+  margin: 0;
+  color: #fff;
+  display: inline-block;
+  width: 76px;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 100; }
+
+.intro__link {
+  display: inline-block;
+  padding: 22px 5px 22px 5px;
+  margin: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: url("../img/intro-link.png") no-repeat;
+  background-position: -7px 0; }
+
+body {
+  width: 100%;
+  margin: 0; }
+
+.container {
+  width: 290px;
+  margin: 0 auto; }
+
+/*@font-face {
+  font-family: 'Besom 2';
+  src: url('Besom.eot');
+  src: local('Besom by Krisjanis Mezulis / RIT CREATIVE'), local('Besom'),
+    url('Besom.eot?#iefix') format('embedded-opentype'),
+    url('Besom.woff') format('woff'),
+    url('Besom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+@font-face {
+  font-family: "Besom 2";
+  src: url("../font/Besom.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */

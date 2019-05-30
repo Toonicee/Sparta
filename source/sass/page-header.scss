@@ -1,0 +1,19 @@
+.page-header {
+  width: 100%;
+  background: url("../img/bg-header-modile.jpg") no-repeat center;
+  background-position: 0 1px;
+}
+
+.page-header__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
