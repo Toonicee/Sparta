@@ -3,7 +3,11 @@
 @import "font";
 @import "page-main";
 @import "description";
+@import "security";
 @import "info";
+@import "test";
+@import "skill";
+@import "program";
 
 body {
   width: 100%;
@@ -36,4 +40,17 @@ body {
   font-style: normal;
 }
 
+.button {
+  display: block;
+  padding: 22px 77px 30px 83px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: url("../img/intro-link.png") no-repeat;
+  background-position:-7px 0;
+}
 

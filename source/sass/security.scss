@@ -1,0 +1,33 @@
+.security {
+  margin-top: 80px;
+}
+
+.security__title {
+  color: #ff0000;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.security__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  background: url("../img/security-bg.png") no-repeat;
+  background-position: -2px, 0;
+}
+
+.security__item {
+  margin: 0 39px 57px 0;
+  display: flex;
+
+  span {
+    color: #fff;
+    display: block;
+    margin: 15px 52px 0 15px;
+  }
+}

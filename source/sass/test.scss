@@ -1,0 +1,23 @@
+.test {
+  background: url("../img/test-bg.png") no-repeat;
+  background-position: 0 0;
+  padding: 150px 0;
+}
+
+.test__title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 51px;
+
+  span {
+    display: inline-block;
+    color: #ff0000;
+    font-family: "besom 2", sans-serif;
+    font-size: 80px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-bottom: 27px;
+  }
+}

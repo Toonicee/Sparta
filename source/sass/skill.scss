@@ -1,0 +1,139 @@
+.skill {
+  margin-top: 28px;
+}
+
+.skill__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #ff0000;
+  text-align: center;
+  background: url("../img/skill-bg.png") no-repeat;
+  background-position: 1px 10px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.skill__list {
+  list-style: none;
+  padding: 0;
+  margin: 70px 0 0 40px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 51px;
+    height: 300px;
+    top: 14px;
+    left: -55px;
+    background: url("../img/and-all.png") no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 750px;
+    top: -104px;
+    left: -56px;
+    background: url("../img/elips.png") no-repeat;
+  }
+}
+
+.skill__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #ffe5e5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 42px;
+    left: 19px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #ff0000;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 46px;
+    left: 22px;
+  }
+
+  &:nth-child(1) {
+    margin: 0 25px 0 36px;
+
+   &::before {
+    top: 11px;
+    left: -44px;
+  }
+
+  &::after {
+    top: 15px;
+    left: -40px;
+  }
+}
+
+  &:nth-child(2) {
+    margin: 87px 25px 0 58px;
+
+    &::before {
+      top: 12px;
+      left: -34px;
+    }
+
+    &::after {
+      top: 15px;
+      left: -31px;
+    }
+  }
+
+  &:nth-child(3) {
+    margin: 64px 0 0 73px;
+
+    &::before {
+      top: 15px;
+      left: -42px;
+    }
+
+    &::after {
+      top: 19px;
+      left: -37px;
+    }
+  }
+
+  &:nth-child(4) {
+    margin: 111px 0 0 51px;
+
+    &::before {
+      top: 16px;
+      left: -44px;
+    }
+
+    &::after {
+      top: 20px;
+      left: -39px;
+    }
+  }
+
+  &:nth-child(5) {
+    margin: 68px 0 0 18px;
+
+    &::before {
+      top: 26px;
+      left: -69px;
+    }
+
+    &::after {
+      top: 30px;
+      left: -64px;
+    }
+  }
+}
