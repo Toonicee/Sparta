@@ -8,10 +8,11 @@
 @import "test";
 @import "skill";
 @import "program";
+@import "instructor";
 
 body {
-  width: 100%;
   margin: 0;
+  width: 100%;
   font-family: sans-serif;
   z-index: 2;
 }
@@ -19,6 +20,18 @@ body {
 .container {
   width: 290px;
   margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1140px;
+  }
 }
 
 /*@font-face {
@@ -54,3 +67,14 @@ body {
   background-position:-7px 0;
 }
 
+/*@mixin overlay() {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #ff0000;
+  text-align: center;
+  background: url("../img/skill-bg.png") no-repeat;
+  background-position: 1px 10px;
+  font-weight: 700;
+  margin-top: 0;
+}
+*/

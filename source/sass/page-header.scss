@@ -5,6 +5,27 @@
   background-position: 0 1px;
 }
 
+.page-header__sup-title {
+  color: #fff;
+  margin-top: 19px;
+  font-size: 16px;
+  font-family: sans-serif;
+  position: relative;
+  position: absolute;
+  top: 92px;
+  left: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -15px;
+    width: 270px;
+    height: 15px;
+    background: url("../img/bg-intro-span.png") no-repeat;
+  }
+}
+
 .page-header__link {
   text-decoration: none;
   color: #fff;
@@ -17,4 +38,17 @@
 .page-header__inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+@media (min-width: 750px) {
+  .page-header {
+    width: 750px;
+    background: url("../img/bg-header.jpg") no-repeat center;
+  }
+
+  .page-header__sup-title {
+    top: 2px;
+    left: 40%;
+  }
 }

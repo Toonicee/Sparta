@@ -2,3 +2,17 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: 750px) {
+  .page-main {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1170px) {
+  .page-main {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
