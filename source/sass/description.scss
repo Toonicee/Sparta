@@ -10,7 +10,7 @@
   margin: 20px 0 26px 0;
   font-size: 36px;
   font-weight: bold;
-  padding: 0 0 20px 0;
+  padding: 20px 0 20px 0;
   text-transform: uppercase;
   z-index: 40;
   position: relative;
@@ -19,7 +19,8 @@
 
   &--bg {
     background: url("../img/dicscover.png") no-repeat;
-    background-position: -1px 9px
+    background-position: 3px 30px;
+
   }
 }
 
@@ -111,14 +112,93 @@
 @media (min-width: 750px) {
   .description__item {
     display: flex;
+    position: relative;
+    align-items: center;
+    text-align: left;
+
+    &:nth-child(1) {
+      .description__wrapper-image {
+        margin: 35px 28px 0 18px;
+      }
+    }
 
     &:nth-child(2) {
       flex-direction: row-reverse;
+
+      .description__wrapper-image {
+        margin: 21px -2px 0 18px
+      }
+
+      .description__wrapper-exposition {
+        margin: 16px 15px 0 146px;
+      }
+    }
+
+    &:nth-child(3) {
+      .description__wrapper-image {
+        margin: -9px 0 0 5px
+      }
+
+      .description__wrapper-exposition {
+        margin: -41px 80px 0 16px;
+      }
     }
 
     &:nth-child(4) {
       flex-direction: column;
       align-items: flex-end;
+
+      .description__wrapper-exposition {
+        margin: 12px 0 0 459px;
+      }
+
+      .description__wrapper-image {
+        margin: -55px 30px 0 0;
+      }
     }
   }
+
+  .description__wrapper-exposition {
+    margin: 28px 84px 0 0;
+  }
+
+  .description__list {
+    margin-top: 89px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      right: 107px;
+      width: 506px;
+      height: 1050px;
+      background: url("../img/line.svg") no-repeat;
+    }
+  }
+
+  .description__title {
+    font-size: 48px;
+    margin: 11px 0 20px 11px;
+    padding: 30px 0;
+    background: url("../img/bg-title-table.png") no-repeat;
+    background-position: 16px -12px;
+  }
+
+  .description__span--start {
+    position: absolute;
+    top: 14px;
+    right: 94px;
+  }
+
+  .description__span--finish {
+    position: absolute;
+    top: 81px;
+    left: 214px;
+  }
+
+  .description__text {
+    margin-left: 0;
+  }
+
 }

@@ -1,8 +1,9 @@
 .page-header {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background: url("../img/bg-header-modile.jpg") no-repeat center;
   background-position: 0 1px;
+  background-size: cover;
 }
 
 .page-header__sup-title {
@@ -12,8 +13,8 @@
   font-family: sans-serif;
   position: relative;
   position: absolute;
-  top: 92px;
-  left: 34px;
+  top: 99px;
+  left: 0;
 
   &::before {
     content: "";
@@ -24,6 +25,10 @@
     height: 15px;
     background: url("../img/bg-intro-span.png") no-repeat;
   }
+}
+
+.page-header__logo {
+  margin-top: 11px;
 }
 
 .page-header__link {
@@ -43,12 +48,25 @@
 
 @media (min-width: 750px) {
   .page-header {
-    width: 750px;
-    background: url("../img/bg-header.jpg") no-repeat center;
+    background: url("../img/bg-header.jpg") no-repeat;
+    background-size: cover;
   }
 
   .page-header__sup-title {
     top: 2px;
     left: 40%;
+  }
+
+  .page-header__logo {
+    margin-top: 18px;
+  }
+
+  .page-header__sup-title {
+    top: 10px;
+    left: 42%;
+
+    &::before {
+      left: -85px;
+    }
   }
 }
