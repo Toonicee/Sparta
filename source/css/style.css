@@ -688,11 +688,75 @@
     display: inline-block;
     margin: 0 47px 3px 12px; }
 
+.reviews {
+  margin-top: 28px;
+  background: url("../img/slider-bg-mobile.png") no-repeat;
+  background-position: 5px 281px; }
+
+.reviews__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #ff0000;
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  font-weight: 700;
+  background: url("../img/reviews-title-mobile.png") no-repeat;
+  background-position: 1px 15px; }
+
+.reviews__wrapper {
+  position: relative;
+  margin: 26px 0 0 0; }
+
+.reviews__btn-play {
+  position: absolute;
+  top: 20%;
+  left: 31%; }
+
+.slider {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 200px; }
+
+.slider__title {
+  font-size: 20px; }
+
+.slider__control {
+  position: relative; }
+
+.slider__arrow {
+  border: none;
+  background: inherit;
+  position: relative; }
+  .slider__arrow::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background: url("../img/arrow-next.png") no-repeat; }
+  .slider__arrow--pre::before {
+    background: url("../img/arrow-pre.png") no-repeat; }
+
+.slider__input {
+  position: relative;
+  border: none; }
+  .slider__input::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../img/slider-input1.png") no-repeat; }
+
 body {
   margin: 0;
   width: 100%;
   font-family: sans-serif;
   z-index: 2; }
+
+blockquote {
+  margin: 0; }
 
 .container {
   width: 290px;
@@ -733,7 +797,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  background: url("../img/intro-link.png") no-repeat;
+  background: url("../img/button.png") no-repeat;
   background-position: -7px 0; }
 
 /*@mixin overlay() {

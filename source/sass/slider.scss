@@ -1,0 +1,47 @@
+.slider {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 200px;
+}
+
+.slider__title {
+  font-size: 20px;
+}
+
+.slider__control {
+  position: relative;
+}
+
+.slider__arrow {
+  border: none;
+  background: inherit;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background: url("../img/arrow-next.png") no-repeat;
+  }
+
+  &--pre {
+    &::before {
+      background: url("../img/arrow-pre.png") no-repeat;
+    }
+  }
+}
+
+.slider__input {
+  position: relative;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../img/slider-input1.png") no-repeat;
+  }
+}

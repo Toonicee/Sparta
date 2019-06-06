@@ -9,12 +9,18 @@
 @import "skill";
 @import "program";
 @import "instructor";
+@import "reviews";
+@import "slider";
 
 body {
   margin: 0;
   width: 100%;
   font-family: sans-serif;
   z-index: 2;
+}
+
+blockquote {
+  margin: 0;
 }
 
 .container {
@@ -63,7 +69,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  background: url("../img/intro-link.png") no-repeat;
+  background: url("../img/button.png") no-repeat;
   background-position:-7px 0;
 }
 
