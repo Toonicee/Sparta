@@ -1,0 +1,22 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__link {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #3c313b;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.page-footer__logo {
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: -13px;
+    right: 78px;
+    font-size: 14px;
+  }
+}

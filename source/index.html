@@ -35,7 +35,7 @@
 	<main class="page-main">
 			<section class="description">
 				<div class="description__container">
-				<h2 class="description__title">Что вас ждет</h2>
+				<h2 class="description__title title">Что вас ждет</h2>
         <ul class="description__list">
       	  <li class="description__item">
       	  	<span class="description__span description__span--start">Start</span>
@@ -73,7 +73,7 @@
       	  <li class="description__item">
       		  <div class="description__wrapper-image">
               <picture>
-                <source media="(min-width: 750px)" srcset="img/132.png" width="343" height="280">
+                <!-- <source media="(min-width: 750px)" srcset="img/132.png" width="343" height="280"> -->
                 <img class="description__image" src="img/bike-ride.png"  width="291" height="241">
               </picture>
             </div>
@@ -120,7 +120,7 @@
       </section>
       <section class="description">
         <div class="description__container container">
-        <h2 class="description__title description__title--bg">Ты узнаешь, что делать</h2>
+        <h2 class="description__title description__title--bg title">Ты узнаешь, что делать</h2>
         <ul class="description__list">
           <li class="description__item">
             <div class="description__wrapper-image description__wrapper-image--margin">
@@ -190,7 +190,7 @@
         </div>
       </div>
       <div class="skill">
-        <h3 class="skill__title">Ты приобретешь навык</h3>
+        <h3 class="skill__title title">Ты приобретешь навык</h3>
         <div class="skill__container container">
           <ul class="skill__list">
             <li class="skill__item">Освоишь больше десятка узлов</li>
@@ -203,7 +203,7 @@
       </div>
       <section class="program">
         <div class="program__container container">
-        <h3 class="program__title">В программе спецкурса</h3>
+        <h3 class="program__title title">В программе спецкурса</h3>
         <div class="program__wrapper">
           <ul class="program__list">
             <li class="program__item"><span>01</span>Военный альпинизм с минимальным набором снаряжения</li>
@@ -223,7 +223,7 @@
         </div>
       </section>
       <div class="instructor">
-        <h3 class="instructor__title">Инструктор</h3>
+        <h3 class="instructor__title title">Инструктор</h3>
         <div class="instructor__image-wrapper">
           <img src="img/instructor.jpg" class="instructor__image" width="290" height="290">
         </div>
@@ -254,7 +254,7 @@
       </div>
       <section class="reviews">
         <div class="reviews__container container">
-          <h3 class="reviews__title">Отзывы</h3>
+          <h3 class="reviews__title title">Отзывы</h3>
           <div class="reviews__wrapper">
             <img src="img/video.png" width="292" height="164">
             <img class="reviews__btn-play" src="img/media-play.png">
@@ -283,25 +283,47 @@
             </div> -->
             <div class="slider__control">
               <button type="button" class="slider__arrow slider__arrow--pre"></button>
-              <input type="radio" name="1" class="slider__input">
-              <input type="radio" name="1">
-              <input type="radio" name="1">
-              <input type="radio" name="1">
+              <div class="slider__wrapper-input">
+              <input type="radio" id="inp1" name="1"  class="slider__input">
+              <label for="inp1"></label>
+              <input type="radio" id="inp2" name="1" class="slider__input">
+              <label for="inp2"></label>
+              <input type="radio" id="inp3" name="1" class="slider__input">
+              <label for="inp3"></label>
+              <input type="radio" id="inp4" name="1" class="slider__input">
+              <label for="inp4"></label>
+              </div>
               <button type="button" class="slider__arrow slider__arrow--next"></button>
             </div>
           </div>
         </div>
       </section>
-        <div>
-          <h3>География проведения</h3>
+        <div class="map">
+          <h3 class="title__map title">География проведения</h3>
         </div>
       <div class="form">
-        <h3 class="form__title">Есть вопросы?</h3>
-        <p>Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</p>
-        <input type="text" name="" placeholder="Имя">
-        <input type="text" name="" placeholder="Телефон">
-        <a href="#" class="form__link button">Отправить</a>
+        <div class="form__container container">
+          <h3 class="form__title">Есть вопросы?</h3>
+          <p class="form__text">Оставьте свой номер телефона, наши менеджеры с вами свяжутся и проконсультируют</p>
+          <input class="form__input" type="text" name="" placeholder="Имя">
+          <input class="form__input" type="text" name="" placeholder="Телефон">
+          <a href="#" class="form__link button">Отправить</a>
+        </div>
       </div>
 		</main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__wrapper-link">
+         <a class="page-footer__link" href="tel:+79304150252">+7 (930) 415 02 52</a>
+        </div>
+        <div>
+          <p class="page-footer__text">Политика конфиденциальности</p>
+        </div>
+        <div class="page-footer__logo logo">
+          <img src="img/logo-footer.png" width="156" height="56">
+          <p>© 2019</p>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

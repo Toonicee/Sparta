@@ -11,6 +11,8 @@
 @import "instructor";
 @import "reviews";
 @import "slider";
+@import "form";
+@import "page-footer";
 
 body {
   margin: 0;
@@ -84,3 +86,16 @@ blockquote {
   margin-top: 0;
 }
 */
+
+.title {
+  text-align: center;
+  font-family: sans-serif;
+  color: #ff0000;
+  margin: 20px 0 26px 0;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+  z-index: 40;
+  position: relative;
+}
