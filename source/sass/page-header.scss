@@ -70,3 +70,10 @@
     }
   }
 }
+
+@media (min-width: 1170px) {
+  .page-header {
+    background: url("../img/bg-header-desktop.png") no-repeat;
+    background-size: cover;
+  }
+}

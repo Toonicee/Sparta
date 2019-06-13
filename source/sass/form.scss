@@ -1,14 +1,16 @@
 .form {
-  background: url("../img/bg-form-table.png") no-repeat;
-  background-position: 1, 1;
+  background: url("../img/bg-form-mobile.png") no-repeat;
+  background-size: cover;
   color: #fff;
+  padding: 36px 0 125px 0;
 }
 
 .form__input {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 291px;
-  height: 48px;
+  width: 269px;
+  height: 46px;
   border: none;
+  margin-bottom: 32px;
   border-radius: 30px;
   color: #fff;
   padding-left: 20px;
@@ -18,13 +20,20 @@
   }
 }
 
+.form__link {
+  margin-top: 13px;
+}
+
 .form__title {
   font-size: 48px;
   font-family: "Besom 2";
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 100;
+  margin-bottom: 0;
 }
 
 .form__text {
+  line-height: 24px;
+  margin-bottom: 35px;
 }
