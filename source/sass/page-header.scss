@@ -75,5 +75,17 @@
   .page-header {
     background: url("../img/bg-header-desktop.png") no-repeat;
     background-size: cover;
+    padding-bottom: 80px;
+  }
+
+  .page-header__sup-title {
+    font-size: 18px;
+    top: 29px;
+    left: 44%;
+  }
+
+  .page-header__link {
+    font-size: 24px;
+    margin-top: 46px;
   }
 }

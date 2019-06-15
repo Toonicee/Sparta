@@ -61,6 +61,16 @@ blockquote {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'core_sans_n45_regular';
+  src: url('ofont.ru_core_sans-webfont.woff2') format('woff2'),
+    url('ofont.ru_core_sans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
 .button {
   display: inline-block;
   padding: 22px 89px 30px 97px;
@@ -91,8 +101,6 @@ blockquote {
   text-align: center;
   font-family: sans-serif;
   color: #ff0000;
-  margin: 20px 0 26px 0;
-  font-size: 36px;
   font-weight: bold;
   padding: 20px 0 20px 0;
   text-transform: uppercase;

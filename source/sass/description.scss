@@ -12,18 +12,18 @@
 
 
   &::before {
-    content: "что вас ждет";
+    content: "что  вас  ждёт";
     top: 38px;
     left: -70px;
     font-size: 100px;
     font-family: "Besom 2";
+    font-weight: 100;
     color: rgba(55, 59, 65, 0.102);
     text-transform: uppercase;
     line-height: 0.2;
     text-align: center;
     position: absolute;
     width: 100%;
-
   }
 }
 
@@ -184,22 +184,23 @@
     font-size: 48px;
     margin: 11px 0 20px 11px;
     padding: 30px 0;
-    background: url("../img/bg-title-table.png") no-repeat;
+/*    background: url("../img/bg-title-table.png") no-repeat;*/
     background-position: 16px -12px;
   }
 
-  .description__span--start {
+  .description__span {
     position: absolute;
-    top: 14px;
-    right: 94px;
-  }
 
-  .description__span--finish {
-    position: absolute;
-    top: 81px;
-    left: 214px;
-  }
+    &--start {
+      top: 14px;
+      right: 94px;
+    }
 
+    &--finish {
+      top: 81px;
+      left: 214px;
+    }
+  }
   .description__text {
     margin-left: 0;
   }
@@ -208,6 +209,17 @@
 
 
 @media (min-width: 1170px) {
+  .description__title {
+    font-size: 68px;
+    margin: 114px 15px 0 0;
+
+    &::before {
+      font-size: 180px;
+      top: 54px;
+      left: 10px;
+    }
+  }
+
   .description__item {
     &:nth-child(2) {
       flex-direction: row;
@@ -231,4 +243,79 @@
     width: 300px;
     margin: 0;
   }
+
+  .description__span {
+
+    &--start {
+      top: 32px;
+      right: 284px;
+    }
+
+    &--finish {
+      top: 104px;
+      left: 219px;
+    }
+  }
+
+  .description__list {
+
+    &::before {
+      top: -8px;
+      left: 139px;
+      width: 700px;
+      height: 1050px;
+      background: url("../img/line-desktop.svg") no-repeat;
+    }
+  }
+
+  .description__wrapper-image {
+    transform: scale(1.2);
+  }
+
+  .description__item {
+    &:nth-child(1) {
+      .description__wrapper-image {
+        margin: 48px 64px 0 46px;
+      }
+
+      .description__wrapper-exposition {
+        margin-top: 81px;
+      }
+    }
+
+    &:nth-child(2) {
+      .description__wrapper-image {
+        margin: 29px -85px 0 8px;
+        transform: scale(1.3);
+      }
+
+      .description__wrapper-exposition {
+        margin: 28px 0 0 145px;
+      }
+    }
+
+    &:nth-child(3) {
+      .description__wrapper-image {
+        margin: -11px 27px 0 -10px;
+        transform: scale(1.1);
+      }
+
+      .description__wrapper-exposition {
+        margin-top: -25px;
+      }
+    }
+
+    &:nth-child(4) {
+      .description__wrapper-image {
+        margin: -25px 60px 0 0;
+      }
+
+     .description__wrapper-exposition {
+        align-items: flex-start;
+        padding-left: 13px;
+        box-sizing: border-box;
+      }
+    }
+  }
 }
+
