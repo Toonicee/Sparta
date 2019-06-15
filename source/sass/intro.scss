@@ -18,9 +18,10 @@
     display: block;
     color: #fff;
     text-transform: uppercase;
-    font-family: sans-serif;
     font-size: 36px;
     font-weight: 700;
+    font-family: "core sans", sans-serif;
+    line-height: 1.2;
   }
 }
 
@@ -94,5 +95,38 @@
 
   .intro__link {
     margin:48px 0 42px 29px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .intro {
+    margin-top: 128px;
+    width: 555px;
+    margin: 128px 0 0 0;
+  }
+
+  .intro__title {
+    font-size: 180px;
+    margin-left: 0;
+
+    span {
+      font-size: 68px;
+      margin-top: 46px;
+    }
+  }
+
+  .intro__inner {
+    margin: 14px 0 0 7px;
+    justify-content: flex-start;
+  }
+
+  .intro__text {
+    width: 90px;
+    margin-left: 37px;
+  }
+
+  .intro__link {
+    width: 100px;
+    margin: 69px 0 42px -10px;
   }
 }

@@ -11,6 +11,8 @@
 @import "instructor";
 @import "reviews";
 @import "slider";
+@import "form";
+@import "page-footer";
 
 body {
   margin: 0;
@@ -59,9 +61,19 @@ blockquote {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'core_sans_n45_regular';
+  src: url('ofont.ru_core_sans-webfont.woff2') format('woff2'),
+    url('ofont.ru_core_sans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
 .button {
-  display: block;
-  padding: 22px 77px 30px 83px;
+  display: inline-block;
+  padding: 22px 89px 30px 97px;
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -84,3 +96,21 @@ blockquote {
   margin-top: 0;
 }
 */
+
+.title {
+  text-align: center;
+  font-family: sans-serif;
+  color: #ff0000;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+  z-index: 40;
+  position: relative;
+}
+
+@media (min-width: 750px) {
+  .button {
+    padding: 22px 95px 30px 115px;
+    background-position: 1px 1px;
+  }
+}

@@ -10,6 +10,8 @@
 
 .slider__control {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .slider__arrow {
@@ -22,7 +24,7 @@
     position: absolute;
     width: 80px;
     height: 20px;
-    left: 0;
+    left: 50px;
     top: 0;
     background: url("../img/arrow-next.png") no-repeat;
   }
@@ -30,18 +32,34 @@
   &--pre {
     &::before {
       background: url("../img/arrow-pre.png") no-repeat;
+      left: -50px;
     }
   }
 }
 
 .slider__input {
+ display: none;
   position: relative;
   border: none;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: url("../img/slider-input1.png") no-repeat;
+
+   + label {
+    &::before {
+      content: "";
+      top: 0;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: url("../img/slider-input1.png") no-repeat;
+    }
+  }
+
+  &:checked + label {
+    &::before {
+      background: url("../img/slider-input1-red.png") no-repeat;
+      width: 15px;
+    }
   }
 }
+
+
+

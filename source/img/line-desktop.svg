@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="9" viewBox="0 0 10 9">
+<svg xmlns="http://www.w3.org/2000/svg" width="686.907" height="1042.06" viewBox="0 0 686.907 1042.06">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -27,5 +27,17 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<image id="_." data-name="." width="10" height="9" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAQAAAChr3WYAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgYVMSb4kookAAAAgklEQVQI1zXIsQoBYQAA4O+/+0uJukExWAxklcXsDUw2q0E3eApP4DUM9w5MzF7Aoq4MkhIy4Bu/ULA0M7CSO+lDKLjIHPTUBWsLolyGoae3l9RVPZr6SgU8pfKo88vgqC1R04wq/rr2TjgnGuYeIBqZQIKNrRve7sp/lsainVRVCz6P6RtVFecdrQAAAABJRU5ErkJggg=="/>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1px;
+        stroke-dasharray: 6 7;
+        fill-rule: evenodd;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M644,2290s5-43,56-44c72.429-1.42,73.894,57.18,196,51,79-4,97-66,81-101s-127-59-181-59-196-13-255-197,130-236,215-230c91.042,6.43,193,52,234,3s-83-73-118-80-84.031-19.27-145-44c-106-43-147-114-147-114s-37.379-122.07,63-176c134-72,277.777-45.7,380,42,88.75,76.13,172,31,195,12" transform="translate(-529.313 -1256.91)"/>
 </svg>

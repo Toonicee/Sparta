@@ -1,6 +1,7 @@
 .test {
-  background: url("../img/test-bg.png") no-repeat;
-  background-position: 0 0;
+  background: url("../img/bg-test.png") no-repeat;
+  background-position: 45% 0;
+  background-size: cover;
   padding: 150px 0;
 }
 
@@ -19,5 +20,52 @@
     line-height: 15px;
     font-weight: 400;
     margin-bottom: 27px;
+  }
+}
+
+@media (min-width: 750px) {
+  .test__title {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 73px 0 0 7px;
+
+    span {
+      font-size: 90px;
+      margin-bottom: 34px;
+    }
+  }
+
+  .test__link {
+    margin-top: 60px;
+  }
+
+  .test__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .test {
+    padding: 90px 0 125px 0;
+    background-position: 40% 0;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1170px) {
+  .test {
+    background: url("../img/bg-test-desktop.png") no-repeat;
+  }
+
+  .test__title {
+    font-size: 41px;
+    display: flex;
+    flex-direction: row;
+    margin: 73px 0 0 7px;
+
+    span {
+      font-size: 120.7px;
+      margin-bottom: 34px;
+    }
   }
 }
