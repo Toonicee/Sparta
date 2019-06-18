@@ -1,23 +1,31 @@
 .program {
-  margin-top: 50px;
+  margin-top: 45px;
+  background: url("../img/program-bg.png") no-repeat;
+  background-size: cover;
 }
 
 .program__title {
-  margin: 81px 0 -134px 0;
+  margin: 36px 0 0 0;
   background: url("../img/program-title.png") no-repeat;
   background-position: 0 0;
+  font-size: 35px;
+  display: inline-block;
 }
 
 .program__list {
   list-style: none;
-  padding: 0 0 0 16px;
+  padding: 0;
+  text-align: left;
+
+  p {
+    margin: 0;
+    font-size: 15px;
+  }
 }
 
 .program__wrapper {
-  background: url("../img/program-bg.png") no-repeat;
-  padding: 146px 0 50px 0;
+  padding: 13px 0 50px 0;
   margin-top: 17px;
-  background-size: cover;
   text-align: center;
 }
 

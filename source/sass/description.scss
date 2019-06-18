@@ -4,7 +4,8 @@
 }
 
 .description__title {
-
+  font-size: 35px;
+  padding: 11px 0 20px 0;
   &--bg {
     background: url("../img/dicscover.png") no-repeat;
     background-position: 3px 30px;
@@ -70,7 +71,7 @@
 
     &--finish {
 
-      margin: 67px 0 0 3px;
+      margin: 47px 0 0 3px;
 
         &::before {
           top: -34px;
@@ -96,11 +97,71 @@
   margin: 11px 11px 15px 16px;
 }
 
-.description__wrapper-image {
-  margin-top: 40px;
+.description__item {
+  &:nth-child(1) {
+    .description__text--margin {
+      margin: 14px 0 0 9px;
+    }
 
-  &--margin {
-    margin-bottom: 10px;
+    .description__wrapper-image {
+      margin: 41px 0 0 0;
+
+      &--margin {
+        margin: 38px 0 25px 0;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .description__text--margin {
+      margin: 16px 0 0 9px;
+    }
+
+    .description__wrapper-image {
+      margin: 47px 0 0 0;
+    }
+  }
+
+  &:nth-child(3) {
+    .description__text--margin {
+      margin: 16px 0 0 9px;
+    }
+
+    .description__wrapper-image {
+      margin: 15px 0 0 0;
+
+      &--margin {
+        margin: 50px 0 25px -6px;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    .description__text--margin {
+      margin: 16px 0 0 12px;
+    }
+
+    .description__wrapper-image {
+      margin: 25px 0 0 5px;
+
+      &--margin {
+        margin: 49px 0 20px 12px;
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    .description__text--margin {
+      margin: 16px 0 0 0;
+    }
+
+    .description__wrapper-image {
+      margin: 25px 0 0 5px;
+
+      &--margin {
+        margin: 53px 0 25px 0;
+      }
+    }
   }
 }
 
@@ -113,33 +174,146 @@
 }
 
 @media (min-width: 750px) {
+  .description {
+    margin: 0 0 29px 0;
+  }
+
   .description__item {
     display: flex;
     position: relative;
     align-items: center;
     text-align: left;
 
+    &--row {
+      width: 313px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &:nth-child(1) {
+        margin-right: 61px;
+
+        .description__wrapper-exposition {
+          margin: 0;
+        }
+
+        .description__wrapper-image {
+          margin: 21px 0 0 9px !important;
+        }
+
+        .description__sub-title {
+          margin: 25px 0 0 7px;
+        }
+      }
+
+      &:nth-child(2) {
+        .description__wrapper-exposition {
+          margin: 0;
+        }
+
+        .description__wrapper-image {
+          margin: 22px 0 0 9px !important;
+        }
+
+        .description__wrapper-exposition {
+          margin: 0px 0px 0px 1px !important;
+        }
+
+        .description__sub-title {
+          margin: 25px 0 0 7px;
+        }
+      }
+
+       &:nth-child(3) {
+        margin-right: 61px;
+
+        .description__wrapper-exposition {
+          margin: 0;
+        }
+
+        .description__wrapper-image {
+          margin: 39px 0 0 9px !important;
+        }
+
+        .description__wrapper-exposition {
+          margin: 0px 0px 0px 1px !important;
+        }
+
+        .description__sub-title {
+          margin: 25px 0 0 7px;
+        }
+      }
+
+       &:nth-child(4) {
+        align-items: flex-start !important;
+
+        .description__wrapper-exposition {
+          margin: 0;
+        }
+
+        .description__wrapper-image {
+          margin: 39px 0 0 9px !important;
+        }
+
+        .description__wrapper-exposition {
+          margin: -5px 0px 0px 1px !important;
+        }
+
+        .description__sub-title {
+          margin: 25px 0 0 7px;
+        }
+      }
+
+      &:nth-child(5) {
+        .description__wrapper-exposition {
+          margin: 0;
+        }
+
+        .description__wrapper-image {
+          margin: 39px 0 0 52px !important;
+        }
+
+        .description__wrapper-exposition {
+          margin: 1px 0px 0px 44px !important;
+        }
+
+        .description__sub-title {
+          margin: 25px 0 0 7px;
+        }
+      }
+    }
+
+    &--flex {
+      flex-direction: row-reverse;
+    }
+
     &:nth-child(1) {
+      .description__text--margin {
+        margin: 14px 0 0 9px;
+      }
+
       .description__wrapper-image {
-        margin: 35px 28px 0 18px;
+        margin: 41px 0 0 0;
+
+        &--margin {
+          margin: 38px 0 25px 0;
+        }
       }
     }
 
     &:nth-child(2) {
-      flex-direction: row-reverse;
 
       .description__wrapper-image {
-        margin: 21px -2px 0 18px
+        margin: 17px -18px 0 0px;
       }
 
       .description__wrapper-exposition {
-        margin: 16px 15px 0 146px;
+        margin: 8px 15px 0 133px;
       }
     }
 
     &:nth-child(3) {
       .description__wrapper-image {
-        margin: -9px 0 0 5px
+        margin: -9px 0 0 -9px;
       }
 
       .description__wrapper-exposition {
@@ -152,31 +326,40 @@
       align-items: flex-end;
 
       .description__wrapper-exposition {
-        margin: 12px 0 0 459px;
+        margin: 12px 0 0 445px;
       }
 
       .description__wrapper-image {
-        margin: -55px 30px 0 0;
+        margin: -31px 8px 0 0;
       }
     }
   }
 
   .description__wrapper-exposition {
-    margin: 28px 84px 0 0;
+    margin: 27px 46px 0 29px;
   }
 
   .description__list {
     margin-top: 89px;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -25px;
-      right: 107px;
-      width: 506px;
-      height: 1050px;
-      background: url("../img/line.svg") no-repeat;
+    &--margin {
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &--before {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -23px;
+        right: 91px;
+        width: 506px;
+        height: 1050px;
+        background: url("../img/line.svg") no-repeat;
+      }
     }
   }
 
@@ -184,21 +367,25 @@
     font-size: 48px;
     margin: 11px 0 20px 11px;
     padding: 30px 0;
-/*    background: url("../img/bg-title-table.png") no-repeat;*/
-    background-position: 16px -12px;
+
+    &::before {
+      font-size: 130px;
+      top: 54px;
+      left: 15px;
+    }
   }
 
   .description__span {
     position: absolute;
 
     &--start {
-      top: 14px;
-      right: 94px;
+      top: 16px;
+      right: 79px;
     }
 
     &--finish {
-      top: 81px;
-      left: 214px;
+      top: 126px;
+      left: 200px;
     }
   }
   .description__text {

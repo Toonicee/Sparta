@@ -1,5 +1,5 @@
 .security {
-  margin-top: 127px;
+  margin-top: 82px;
 }
 
 .security__title {
@@ -13,12 +13,21 @@
 .security__list {
   list-style: none;
   padding: 0;
-  margin-top: 50px;
+  margin-top: 46px;
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  background: url("../img/security-bg.png") no-repeat;
-  background-position: -2px, 0;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 470px;
+    top: 1px;
+    left: -3px;
+    background: url("../img/security-bg.png") no-repeat;
+  }
 }
 
 .security__item {
@@ -26,8 +35,66 @@
   display: flex;
 
   span {
+    z-index: 20;
     color: #fff;
     display: block;
     margin: 15px 52px 0 15px;
+  }
+}
+
+@media (min-width: 750px) {
+  .security {
+    margin-top: 55px;
+  }
+
+  .security__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+
+    &::before {
+      background: url("../img/security-bg-table.png") no-repeat;
+      width: 507px;
+      height: 50px;
+      top: 0px;
+      left: 75px;
+    }
+  }
+
+  .security__item {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    &:nth-child(1) {
+      margin-left: 77px;
+      margin-right: 34px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 69px;
+    }
+
+    &:nth-child(4) {
+      position: relative;
+      margin-left: 192px;
+      margin-right: 33px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url("../img/security-bg-table.png") no-repeat;
+        width: 261px;
+        height: 50px;
+        top: 0px;
+        left: -5px;
+      }
+    }
+
+    span {
+      margin-bottom: 20px;
+    }
   }
 }

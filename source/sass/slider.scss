@@ -1,17 +1,32 @@
 .slider {
   text-align: center;
   padding-top: 96px;
-  padding-bottom: 200px;
+  padding-bottom: 81px;
 }
 
 .slider__title {
   font-size: 20px;
 }
 
+.slider__text {
+  line-height: 20px;
+  font-size: 16px;
+}
+
 .slider__control {
+  margin-top: 80px;
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.slider__wrapper-input {
+  display: flex;
+  margin-right: 40px;
+}
+
+.slider__inner {
+  position: relative;
 }
 
 .slider__arrow {
@@ -24,28 +39,28 @@
     position: absolute;
     width: 80px;
     height: 20px;
-    left: 50px;
-    top: 0;
+    left: -3px;
+    top: 3px;
     background: url("../img/arrow-next.png") no-repeat;
   }
 
   &--pre {
     &::before {
       background: url("../img/arrow-pre.png") no-repeat;
-      left: -50px;
+      left: -54px;
     }
   }
 }
 
 .slider__input {
- display: none;
+  opacity: 0;
   position: relative;
   border: none;
 
    + label {
     &::before {
       content: "";
-      top: 0;
+      top: 9px;
       position: absolute;
       width: 10px;
       height: 10px;

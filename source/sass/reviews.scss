@@ -1,11 +1,13 @@
 .reviews {
-  margin-top: 28px;
-    background: url("../img/slider-bg-mobile.png") no-repeat;
-  background-position: 0 -12px;
+  margin-top: 22px;
+  background: url("../img/slider-bg-mobile.png") no-repeat;
+  background-position: 0 249px;
+  background-size: cover;
 }
 
 .reviews__title {
   margin: 0;
+  font-size: 35px;
   padding: 30px 0;
   font-weight: 700;
   background: url("../img/reviews-title-mobile.png") no-repeat;

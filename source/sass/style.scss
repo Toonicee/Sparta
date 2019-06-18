@@ -13,6 +13,8 @@
 @import "slider";
 @import "form";
 @import "page-footer";
+@import "map";
+
 
 body {
   margin: 0;
@@ -102,7 +104,6 @@ blockquote {
   font-family: sans-serif;
   color: #ff0000;
   font-weight: bold;
-  padding: 20px 0 20px 0;
   text-transform: uppercase;
   z-index: 40;
   position: relative;
