@@ -114,6 +114,7 @@
   .info {
     background: url("../img/bg-section-info-table.png") no-repeat;
     padding-top: 170px;
+    background-size: cover;
     margin-bottom: 30px;
   }
 
@@ -144,9 +145,69 @@
 @media (min-width: 1170px) {
   .info {
     background: url("../img/bg-info-desktop.png") no-repeat;
+    padding-top: 197px;
   }
 
   .info__list {
     display: flex;
+
+    &--bottom {
+      width: 100%;
+
+      li {
+        width: 360px;
+      }
+    }
+  }
+
+  .info__wrapper-title {
+    background: url("../img/info.png") no-repeat;
+    padding: 81px 0 104px 68px;
+  }
+
+  .info__wrapper--border {
+    border: 5px solid #ff0000;
+    border-image: url("../img/info-bg.png") 4 round round;
+  }
+
+  .info__title {
+    display: block;
+    width: 350px;
+
+    &--bottom {
+      margin-top: 99px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      width: 500px;
+
+      span {
+        margin: 0 44px 0 0;
+      }
+    }
+  }
+
+  .info__list-title {
+    display: flex;
+    flex-direction: column;
+    margin: 33px 0 0 77px;
+
+    span {
+      font-size: 72px;
+      line-height: 24px;
+      margin-bottom: 23px;
+    }
+  }
+
+  .info__description {
+    margin-left: 59px;
+
+    &--bottom {
+      margin-left: 77px;
+    }
+  }
+
+  .info__wrapper {
+    justify-content: flex-start;
   }
 }

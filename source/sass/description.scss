@@ -396,14 +396,28 @@
 
 
 @media (min-width: 1170px) {
+  .description {
+    margin-bottom: 146px;
+  }
+
   .description__title {
     font-size: 68px;
-    margin: 114px 15px 0 0;
+    margin: 90px 15px 0 0;
 
     &::before {
       font-size: 180px;
       top: 54px;
       left: 10px;
+    }
+
+    &--bg {
+      background: none;
+      margin-top: 117px !important;
+
+      &::before {
+        content: "ты узнаешь";
+        top: 63px;
+      }
     }
   }
 
@@ -419,6 +433,7 @@
     &:nth-child(4) {
       flex-direction: row;
       justify-content: flex-end;
+      align-items: flex-start;
 
       .description__wrapper-exposition {
         margin: 12px 0 0 0;
@@ -446,6 +461,12 @@
 
   .description__list {
 
+    &--margin {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 56px;
+    }
+
     &::before {
       top: -8px;
       left: 139px;
@@ -460,6 +481,64 @@
   }
 
   .description__item {
+
+    &--row {
+      flex-direction: row;
+      width: 555px;
+      margin: 0 !important;
+
+      &:nth-child(1) {
+        .description__wrapper-exposition {
+          margin: 0 0 0 81px  !important;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 111px !important;
+
+        .description__wrapper-exposition {
+          margin: 0 19px 0 59px  !important;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: 0 !important;
+
+        .description__sub-title {
+          margin-top: 0;
+        }
+
+        .description__wrapper-exposition {
+          margin: 0 19px 0 71px  !important;
+        }
+      }
+
+      &:nth-child(4) {
+        margin-top: 113px !important;
+
+        .description__wrapper-image {
+          margin-top: 0 !important;
+        }
+
+        .description__sub-title {
+          margin-top: 0;
+        }
+
+        .description__wrapper-exposition {
+          margin: 0 33px 0 60px  !important;
+        }
+      }
+
+      &:nth-child(5) {
+        .description__wrapper-image {
+          margin: 39px 28px 0 25px!important;
+        }
+        .description__wrapper-exposition {
+          margin: 0 33px 0 34px  !important;
+        }
+      }
+    }
+
     &:nth-child(1) {
       .description__wrapper-image {
         margin: 48px 64px 0 46px;
@@ -505,4 +584,3 @@
     }
   }
 }
-

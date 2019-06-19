@@ -44,7 +44,7 @@
 
 @media (min-width: 750px) {
   .security {
-    margin-top: 55px;
+    margin: 55px 0 110px 0;
   }
 
   .security__list {
@@ -95,6 +95,50 @@
 
     span {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .security__title {
+    font-size: 36px;
+    margin: -52px 190px 36px 209px;
+  }
+
+  .security__list {
+    margin-top: 71px;
+    &::before {
+      background: url("../img/security-bg-desktop.png") no-repeat;
+      width: 1040px;
+      height: 50px;
+      top: 0;
+      left: 13px;
+    }
+  }
+
+  .security__item {
+
+    span {
+      margin-bottom: 38px;
+    }
+
+    &:nth-child(1) {
+      margin-left: 21px;
+      margin-right: 34px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 47px;
+      margin-right: 69px;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    &:nth-child(5) {
+      box-sizing: border-box;
+      padding-left: 38px;
     }
   }
 }

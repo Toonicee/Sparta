@@ -137,3 +137,147 @@
     }
   }
 }
+
+@media(min-width: 750px) {
+  .skill {
+    margin-top: 87px;
+    background: url("../img/bg-skill-table.png") no-repeat;
+    background-position: 0 246px;
+    padding-bottom: 40px;
+  }
+
+  .skill__title {
+    font-size: 48px;
+    position: relative;
+    background: none;
+
+    &::before {
+      content: "ты приобретёшь";
+      font-size: 118px;
+      width: 689px;
+      height: 40px;
+      top: -22px;
+      left: 32px;
+      font-family: "Besom 2";
+      color: rgba(50, 56, 63, 0.102);
+      text-transform: uppercase;
+      position: absolute;
+    }
+  }
+
+  .skill__list {
+    margin-left: 190px;
+
+    &::before {
+      width: 200px;
+      top: 37px;
+      left: -75px;
+      background: url("../img/and-all-table.png") no-repeat;
+    }
+
+    &::after {
+      transform: rotate(-25deg);
+      left: 89px;
+    }
+  }
+
+  .skill__item {
+    width: 240px;
+
+    &:nth-child(1) {
+      margin: 86px 25px 0 90px;
+
+      &::before {
+        top: -1px;
+        left: -95px;
+      }
+
+      &::after {
+        top: 3px;
+        left: -92px;
+      }
+    }
+
+    &:nth-child(2) {
+      margin: 96px 25px 0 186px;
+
+      &::before {
+        top: 2px;
+        left: -84px;
+      }
+
+      &::after {
+        top: 6px;
+        left: -81px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin: 73px 0 0 258px;
+
+      &::before {
+        top: 0px;
+        left: -86px;;
+      }
+
+      &::after {
+        top: 4px;
+        left: -82px;
+      }
+    }
+
+    &:nth-child(4) {
+      margin: 106px 0 0 310px;
+
+      &::before {
+        top: 0px;
+        left: -85px;
+      }
+
+      &::after {
+        top: 4px;
+        left: -81px;
+      }
+    }
+
+    &:nth-child(5) {
+      margin: 89px 0 0 316px;
+
+      &::before {
+        top: -2px;
+        left: -75px;
+      }
+
+      &::after {
+        top: 3px;
+        left: -71px;
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1170px) {
+  .skill {
+    background: url("../img/bg-skill-desktop.png") no-repeat;
+    background-position: 0 56px;
+    padding-bottom: 115px;
+  }
+
+  .skill__title {
+    font-size: 68px;
+    margin-top: 167px;
+
+    &::before {
+      font-size: 180px;
+      width: 100%;
+      top: -38px;
+    }
+  }
+
+  .skill__list {
+    margin: 96px 0 0 556px;
+  }
+}
+
+

@@ -1,6 +1,6 @@
 .program {
   margin-top: 45px;
-  background: url("../img/program-bg.png") no-repeat;
+  background: url("../img/program-bg.png");
   background-size: cover;
 }
 
@@ -82,4 +82,142 @@
 
 .program__image {
   margin-top: -23px;
+}
+
+@media(min-width: 750px) {
+  .program {
+    background: url("../img/program-bg-table.png") no-repeat;
+    background-position: 0 146px;
+    background-size: cover;
+  }
+
+  .program__title {
+    font-size: 48px;
+    margin: 32px 0 0 33px;
+    background: none;
+
+    &::before {
+      content: "Программа";
+      font-size: 118px;
+      width: 689px;
+      height: 40px;
+      top: -22px;
+      left: -22px;
+      font-family: "Besom 2";
+      color: rgba(50, 56, 63, 0.102);
+      text-transform: uppercase;
+      position: absolute;
+    }
+  }
+
+  .program__wrapper {
+
+  }
+
+  .program__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 103px 0 0 10px;
+  }
+
+  .program__item {
+    width: 345px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 7;
+    }
+
+     &:nth-child(5) {
+      order: 9;
+    }
+
+     &:nth-child(6) {
+      order: 2;
+    }
+
+     &:nth-child(7) {
+      order: 4;
+    }
+
+     &:nth-child(8) {
+      order: 6;
+    }
+
+     &:nth-child(9) {
+      order: 8;
+    }
+  }
+
+  .program__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .program__text {
+    margin: 0 102px 0 7px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .program {
+    width: 1140px;
+    padding-bottom: 110px;
+    margin: 0 auto;
+    background: url("../img/program-bg-desktop.jpg") no-repeat;
+    background-position: 0 281px;
+  }
+
+  .program__title {
+    font-size: 68px;
+    margin: 128px 0 71px 95px;
+
+    &::before {
+      font-size: 180px;
+      top: -34px;
+      left: 106px;
+    }
+  }
+
+  .program__list {
+    margin-left: 154px;
+  }
+
+  .program__item {
+    &:nth-child(6) {
+      margin-left: 163px;
+    }
+
+     &:nth-child(7) {
+      margin-left: 163px;
+    }
+
+    &:nth-child(8) {
+      margin-left: 163px;
+    }
+
+     &:nth-child(9) {
+      margin-left: 163px;
+    }
+  }
+
+  .program__inner {
+    margin: 10px 0 0 129px;
+  }
+
+  .program__text {
+    font-size: 87px;
+    margin: 30px 96px 0 13px;
+  }
 }
