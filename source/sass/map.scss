@@ -19,7 +19,7 @@
     align-items: center;
     position: relative;
 
-    &::before {
+/*    &::before {
       content: "";
       position: absolute;
       width: 100%;
@@ -27,7 +27,7 @@
       top: 117px;
       left: 0;
       background: url("../img/bg-map-table.png") no-repeat;
-    }
+    }*/
   }
 
   .title__map {
@@ -54,5 +54,23 @@
   .map__picture {
     width: 100%;
     margin-top: 22px;
+  }
+}
+
+@media(min-width: 1170px) {
+  .map {
+    margin-top: 151px;
+  }
+
+  .title__map {
+    font-size: 68px;
+
+    &::before {
+      font-size: 180px;
+      content: "мы здесь были";
+      top: -35px;
+      left: -31px;
+      width: 1000px;
+    }
   }
 }

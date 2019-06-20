@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Sparta</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 	<header class="page-header">
@@ -279,7 +280,8 @@
           <h3 class="reviews__title title">Отзывы</h3>
           <div class="reviews__wrapper">
             <picture>
-              <source media="(min-width: 750px)" srcset="img/video-table.png">
+              <source media="(min-width:1170px)" srcset="img/video-desktop.jpg">
+              <source media="(min-width:750px)" srcset="img/video-table.png">
               <img src="img/video.png" alt="Play">
             </picture>
            <img class="reviews__btn-play" src="img/media-play.png" alt="Play">
@@ -287,15 +289,28 @@
           <div class="reviews__slider slider">
             <div class="slider__wrapper">
               <picture>
-                <source media="(min-width: 750px)" srcset="img/reviews-foto-table.png">
-                <img class="slider__image" src="img/reviews-foto-mobile.jpg" alt="Отзыв">
+                <source media="(min-width:1170px)" srcset="img/reviews-foto-desktop.png">
+                 <img class="slider__image" src="img/reviews-foto-mobile.jpg" alt="Отзыв">
               </picture>
-              <div>
+              <div class="slider__wrapper-text">
                 <h4 class="slider__title">Дмитрий Весна</h4>
                 <blockquote>
-                  <p class="slider__text">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа </p>
+                  <p class="slider__text" id="uptext">Я, Выжил!!!! Такого треша в жизни у меня не было. Не думал даже, что на такое способен в последнее время. Ни какое КМБ и прочее с этим не сравнится. Каждый день плавать в одежде в речках (а это Мурманск детка), спать по 2 часа или совсем не спать, потому что надо совершать марш броски с пострадавшим в 140 кг.
+                    <div id="open" style="display: none;">
+                      <p class="slider__text">Освоить альпинизм и совершать самостоятельные спуски и подъемы с крутых скал за 1 день, делать носилки за 5 минут из подручных средств, есть ягоды по пол дня, потому что другой еды нет, пить только из речки, ходить босиком по лесу весь день, делать укрытия, о которых даже в детстве не мечтал, спать под открытым небом без спальников... и палаток, и постоянно кого то спасать, оказывать первую помощь, учиться быстро договариваться с людьми, которых видишь первый день, а также работать в команде с ними..., потому что ваши Жизни, только в Ваших правильных действиях, быстрой реакции и конечно руках.</p>
+                      <p class="slider__text"> Не перечислить все, что происходило, т.к. оно происходило постоянно. Когда только хотелось выдохнуть и сказать вот сейчас небольшой отдых, сейчас посплю в тепле и наконец, надену сухие носки, начинался Ад!!!</p>
+                      <p class="slider__text">Столько опыта получил за три дня, что за всю жизнь не получал такого, хоть и путешественник лютый. Пересмотрел многие моменты на подготовку к походам, снаряжению, одежде, выбору места для лагеря, безопасности, прогнозировать негативные ситуации, которые могут случиться в лесу и принимать превентивные меры, правильно и быстро принимать решения и многое другое.</p>
+                      <p class="slider__text"> А самое главное найти в себе силы идти к цели, когда нет сил, хочется все послать, сдаться. Открыть в себе не только второе дыхание, а пятое или десятое уже.</p>
+                    </div>
+                  </p>
                 </blockquote>
+                <a href="#uptext" class="slider__button">Читать весь отзыв<span><</span></a>
               </div>
+              <script>
+               $( ".slider__button" ).click(function() {
+               $( "#open" ).toggle( "slow" );
+               });
+              </script>
             </div>
 <!--             <div class="slider__wrapper">
               <img class="slider__image" src="img/reviews-foto-mobile.jpg" width="117" height="156">
@@ -340,6 +355,7 @@
           <div class="map__container">
             <h3 class="title__map title">География проведения</h3>
             <picture class="map__picture">
+              <source srcset="img/map-desktop.png" media="(min-width: 1170px)">
               <source srcset="img/map-table.png" media="(min-width: 750px)">
               <img src="img/map-modile.png" alt="Карта проведения">
             </picture>
@@ -371,5 +387,15 @@
         </div>
       </div>
     </footer>
+     <div class="form form--popap">
+          <div class="form__container form__container--popap">
+          <button class="popap__btn"></button>
+          <h3 class="form__title form__title--popap">Попробуй выжить</h3>
+          <p class="form__text">Оставь свой номер телефона, наши менеджеры свяжутся с тобой для подтверждения заявки</p>
+          <input class="form__input" type="text" name="name" placeholder="Имя">
+          <input class="form__input" type="text" name="phone" placeholder="Телефон">
+          <a href="#" class="form__link button">Отправить</a>
+        </div>
+      </div>
 </body>
 </html>

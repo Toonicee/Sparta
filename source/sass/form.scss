@@ -69,3 +69,48 @@
   }
 }
 
+@media (min-width: 1170px) {
+  .form {
+    background: url("../img/bg-form.png") no-repeat;
+    background-size: cover;
+
+    &--popap {
+      display: none;
+      width: 555px;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 200;
+      background: url("../img/bg-popap.png") no-repeat;
+    }
+  }
+
+  .form__container {
+    &--popap {
+      padding: 0;
+      position: relative;
+    }
+  }
+
+  .form__title--popap {
+    font-size: 53px;
+  }
+
+  .popap__btn {
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+    right: -57px;
+    padding: 0;
+    border: none;
+    background: initial;
+    width: 30px;
+    height: 30px;
+    background: url("../img/button-form.png") no-repeat;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
